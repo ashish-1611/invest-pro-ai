@@ -1,0 +1,9 @@
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  header, nav, button, input {
+    display: none !important;
+  }
+}

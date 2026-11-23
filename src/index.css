@@ -1,0 +1,221 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #FAF7F2;
+  --bg-surface: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --border-subtle: #E8E2D5;
+  --border-active: #059669;
+  --accent-emerald: #059669;
+  --accent-mint: #10B981;
+  --accent-sage: #047857;
+  --accent-amber: #D97706;
+  --accent-rose: #E11D48;
+}
+
+body {
+  background-color: #FAF7F2;
+  background-image: 
+    radial-gradient(circle at 50% -5%, rgba(16, 185, 129, 0.08), transparent 45%),
+    radial-gradient(circle at 100% 40%, rgba(5, 150, 105, 0.05), transparent 40%),
+    radial-gradient(circle at 0% 70%, rgba(217, 119, 6, 0.03), transparent 35%);
+  color: #1C1917;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Institutional Light Cream & Green Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3EFE6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5CEBE;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B5AD9C;
+}
+
+/* Tabular Monospace Financial Numbers */
+.font-financial {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* Clean No-Scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* =========================================================================
+   LUXURY CREAM & LIGHT GREEN THEME MAPPINGS
+   Transforms all terminal cards, tables, badges, and modals
+   ========================================================================= */
+
+/* Card Surfaces & Panels -> Crisp Ivory White with Soft Luxury Shadow */
+.bg-slate-900 {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 4px 20px -2px rgba(120, 105, 80, 0.06), 0 1px 3px 0 rgba(120, 105, 80, 0.04);
+}
+
+.bg-slate-900\/90,
+.bg-slate-900\/80,
+.bg-slate-900\/60,
+.bg-slate-900\/40 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 4px 20px -2px rgba(120, 105, 80, 0.06);
+}
+
+.bg-slate-950,
+.bg-slate-950\/70,
+.bg-slate-950\/80,
+.bg-slate-950\/90 {
+  background-color: #FAF7F2 !important;
+}
+
+/* Inset containers, secondary chips, and sub-panels -> Warm Cream */
+.bg-slate-800,
+.bg-slate-800\/80,
+.bg-slate-800\/60,
+.bg-slate-800\/40,
+.bg-slate-800\/20 {
+  background-color: #F5F0E6 !important;
+}
+
+.bg-slate-700,
+.bg-slate-700\/50 {
+  background-color: #EBE5D8 !important;
+}
+
+/* Borders -> Warm Sand / Cream hairline borders */
+.border-slate-900,
+.border-slate-800,
+.border-slate-800\/80,
+.border-slate-800\/60,
+.border-slate-800\/40,
+.border-slate-700 {
+  border-color: #E8E2D5 !important;
+}
+
+/* Typography Overrides -> High Contrast Charcoal and Warm Slate */
+.text-slate-100 {
+  color: #171513 !important; /* Deep title black */
+}
+
+.text-slate-200 {
+  color: #292623 !important; /* Primary body heading */
+}
+
+.text-slate-300 {
+  color: #423E39 !important; /* Subheading */
+}
+
+.text-slate-400 {
+  color: #635E55 !important; /* Descriptive text & labels */
+}
+
+.text-slate-500 {
+  color: #7D776C !important; /* Muted hints */
+}
+
+.text-slate-600 {
+  color: #948E82 !important; /* Hairline text */
+}
+
+/* Light Green & Sage Accent Badges */
+.bg-emerald-950,
+.bg-emerald-950\/50,
+.bg-emerald-950\/30 {
+  background-color: #ECFDF5 !important;
+  color: #065F46 !important;
+  border-color: #A7F3D0 !important;
+}
+
+.bg-cyan-950,
+.bg-cyan-950\/40,
+.bg-cyan-950\/30,
+.bg-cyan-950\/20 {
+  background-color: #F0FDF4 !important;
+  color: #166534 !important;
+  border-color: #BBF7D0 !important;
+}
+
+.bg-indigo-950,
+.bg-indigo-950\/60,
+.bg-indigo-950\/40 {
+  background-color: #F2FBF5 !important;
+  color: #065F46 !important;
+  border-color: #C2ECCF !important;
+}
+
+.bg-amber-950,
+.bg-amber-950\/40,
+.bg-amber-950\/30 {
+  background-color: #FFFBEB !important;
+  color: #92400E !important;
+  border-color: #FDE68A !important;
+}
+
+.bg-rose-950,
+.bg-rose-950\/40,
+.bg-rose-950\/30 {
+  background-color: #FFF1F2 !important;
+  color: #9F1239 !important;
+  border-color: #FECDD3 !important;
+}
+
+/* Accent text colors made dark & crisp for light backgrounds */
+.text-emerald-400,
+.text-emerald-300 {
+  color: #059669 !important;
+}
+
+.text-cyan-400,
+.text-cyan-300 {
+  color: #047857 !important;
+}
+
+.text-indigo-400,
+.text-indigo-300 {
+  color: #047857 !important;
+}
+
+.text-amber-400,
+.text-amber-300 {
+  color: #B45309 !important;
+}
+
+.text-rose-400,
+.text-rose-300 {
+  color: #BE123C !important;
+}
+
+/* Hover highlights */
+.hover\:bg-slate-800:hover {
+  background-color: #ECE6D8 !important;
+}
+
+.hover\:bg-slate-800\/60:hover {
+  background-color: #F0EAE0 !important;
+}
+
+.hover\:bg-slate-700:hover {
+  background-color: #E2DBD0 !important;
+}
+
+.hover\:text-white:hover {
+  color: #0A0908 !important;
+}
